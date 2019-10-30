@@ -4,7 +4,7 @@ def gray(image):
     gray = cv2.cvtColor(image,cv2.COLOR_RGB2GRAY)#cvtColor converts an image from one color space to another
     return gray
 
-cap = cv2.VideoCapture("G:\\opencv\\25 Best Moments from F.R.I.E.N.D.S - Netflix.mp4")
+cap = cv2.VideoCapture("path of the video file")
 while(cap.isOpened()):
 	_,frame = cap.read()
 	gray_image = gray(frame)
